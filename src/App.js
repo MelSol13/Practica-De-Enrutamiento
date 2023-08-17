@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from "react";
+import Bienvenida from "./componentes/Bienvenida";
+import MostrarNumero from "./componentes/MostrarNumero";
+import MostrarPalabra from "./componentes/MostrarPalabra";
+import MostrarPalabraColores from "./componentes/MostrarPalabraColores";
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path="/Bienvenida" element={<Bienvenida/>}/>
+        <Route path="/MostrarNumero" element={<MostrarNumero/>}/>
+        <Route path="/MostrarPalabra" element={<MostrarPalabra/>}/>
+        <Route path="/MostrarPalabraColores" element={<MostrarPalabraColores/>}/>
+      </Routes>
     </div>
   );
 }
