@@ -4,6 +4,8 @@ import MostrarNumero from "./componentes/MostrarNumero";
 import MostrarPalabra from "./componentes/MostrarPalabra";
 import MostrarPalabraColores from "./componentes/MostrarPalabraColores";
 import { Route, Routes } from "react-router-dom";
+import'./App.css';
+
 
 const App = () => {
 

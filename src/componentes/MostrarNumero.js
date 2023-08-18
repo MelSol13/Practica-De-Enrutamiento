@@ -3,7 +3,10 @@ import React from "react";
 const MostrarNumero = () => {
 
     return(
-        <h1 className="row justify-content-center">El numero es: 4</h1>
+        <div>
+            <h1 className="mt-5 row justify-content-center">El numero es: 4</h1>
+        </div>
+        
     )
 
 }
